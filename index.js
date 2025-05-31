@@ -11,7 +11,6 @@ app.use(cors({ origin: "https://shubham-portfolio-vgfs.onrender.com", credential
 
 app.use("/api/contact", require("./routes/contact.route"))
 
-
 app.use("*", (req, res) => {
     res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
